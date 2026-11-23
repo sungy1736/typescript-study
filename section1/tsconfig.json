@@ -1,0 +1,19 @@
+{
+  // src 경로의 모든 ts파일 컴파일하도록
+  "include": ["src"],
+  "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      // 컴파일 될 js파일 경로
+      "outDir": "dist",
+      // js의 타입형을 엄격히 검사하는 옵션
+      "strict": false,
+      "moduleDetection": "force",
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true,
+      "rootDir": "./src"
+  },
+  "ts-node" : {
+    "esm": true
+  }
+}
